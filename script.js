@@ -6,16 +6,11 @@ burger.addEventListener("click",()=>{
 })
 
 
-
-
-
-
-
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let cartCount = cart.reduce((count, item) => count + item.quantity, 0);
 document.getElementById('cart-count').textContent = cartCount;
 
-// Sample products with images
+
 const products = [
     {
         name: 'Acqua di Gio',
@@ -48,7 +43,7 @@ const products = [
         image: 'images/perfume7.png'
     },
     
-    // Add more products as needed
+
 ];
 
 function addToCart(name, price, image) {
@@ -56,14 +51,12 @@ function addToCart(name, price, image) {
     const existingProductIndex = cart.findIndex(item => item.name === name);
 
     if (existingProductIndex !== -1) {
-        // If product already exists, increase quantity
         cart[existingProductIndex].quantity += 1;
     } else {
-        // Otherwise, add new product
         cart.push(product);
     }
 
-    localStorage.setItem('cart', JSON.stringify(cart)); // Store cart in localStorage
+    localStorage.setItem('cart', JSON.stringify(cart)); 
     updateCartCount();
 }
 
@@ -75,7 +68,7 @@ function updateCartCount() {
 
 function displayCartItems() {
     const cartItemsDiv = document.getElementById('cart-items');
-    cartItemsDiv.innerHTML = ''; // Clear previous items
+    cartItemsDiv.innerHTML = ''; 
 
     let total = 0;
     cart.forEach(item => {
@@ -93,8 +86,8 @@ function displayCartItems() {
                 </div>
             </div>
         `;
-        cartItemsDiv.appendChild(itemDiv); // Append itemDiv to the cart items div
-        total += item.price * item.quantity; // Calculate total
+        cartItemsDiv.appendChild(itemDiv); 
+        total += item.price * item.quantity; 
     });
 
     document.getElementById('total-price').textContent = `Total: $${total.toFixed(2)}`;
@@ -107,11 +100,11 @@ function changeQuantity(name, amount) {
     if (productIndex !== -1) {
         cart[productIndex].quantity += amount;
         if (cart[productIndex].quantity <= 0) {
-            cart.splice(productIndex, 1); // Remove product if quantity is 0
+            cart.splice(productIndex, 1); 
         }
-        localStorage.setItem('cart', JSON.stringify(cart)); // Update localStorage
+        localStorage.setItem('cart', JSON.stringify(cart)); 
         updateCartCount();
-        if (document.title === "Your Cart") displayCartItems(); // Refresh cart display
+        if (document.title === "Your Cart") displayCartItems(); 
     }
 }
 
@@ -123,15 +116,13 @@ function checkout() {
 
     alert('Thank you for your purchase!');
     cart = [];
-    localStorage.setItem('cart', JSON.stringify(cart)); // Clear cart from localStorage
+    localStorage.setItem('cart', JSON.stringify(cart)); 
     updateCartCount();
-    if (document.title === "Your Cart") displayCartItems(); // Refresh cart display
+    if (document.title === "Your Cart") displayCartItems(); 
 }
 
-// Display cart items on cart page load
+
 if (document.title === "Your Cart") {
     displayCartItems();
 }
 
-// Example of adding product to cart (from main page)
-// Assuming 'Add to Cart' button is updated to call addToCart with image URL

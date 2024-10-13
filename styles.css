@@ -1,4 +1,3 @@
-/* General body styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -6,7 +5,7 @@ body {
     padding: 0;
 }
 
-/* Navbar styles */
+
 .navbar {
     background-color: #343a40;
     display: flex;
@@ -16,7 +15,7 @@ body {
 }
 
 .nav-logo {
-    height: 50px; /* Adjust logo size */
+    height: 50px; 
     margin-right: 20px;
 }
 
@@ -61,12 +60,12 @@ body {
 }
 
 
-/* Cart icon */
+
 .cart-icon {
     font-size: 1.5em;
 }
 
-/* Cart page styles */
+
 .cart-page {
     max-width: 800px;
     margin: 20px auto;
@@ -85,7 +84,7 @@ body {
     margin: 20px 0;
 }
 
-/* Cart item styles */
+
 .cart-item {
     display: flex;
     align-items: center;
@@ -100,7 +99,7 @@ body {
 }
 
 .cart-item-image {
-    width: 80px; /* Adjust image size */
+    width: 80px; 
     height: auto;
     margin-right: 20px;
 }
@@ -109,14 +108,14 @@ body {
     margin-right: 10px;
 }
 
-/* Total price styles */
+
 #total-price {
     font-size: 1.5em;
     text-align: right;
     color: #343a40;
 }
 
-/* Button styles */
+
 #checkout-btn {
     background-color: #007bff;
     color: white;

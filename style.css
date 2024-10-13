@@ -123,6 +123,60 @@ a{
     background : var(--primary-white);
 }
 
+/*---------- cart  ---------*/
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cart-item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.cart-icon {
+    color: white;
+    font-size: 24px;
+    position: relative;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute;
+    top: 25px;
+    right: 8.4rem;
+    font-size: 14px;
+}
+
 .left-container{
     align-self: center;
 }
@@ -392,68 +446,13 @@ h3{
     object-fit: cover;
 }
 
+/* ------------ Footer ------------  */
+
 
 .footer-txt{
     color: var(--primary-white);
     font-size: 1.15rem;
     text-align: center;
-}
-
-
-
-
-
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.cart-item-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.cart-item-image {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-
-.cart-icon {
-    color: white;
-    font-size: 24px;
-    position: relative;
-}
-
-#cart-count {
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 8px;
-    position: absolute;
-    top: 25px;
-    right: 8.4rem;
-    font-size: 14px;
 }
 
 
@@ -552,5 +551,5 @@ button:hover {
 }
 
 
-/* ------------ Footer ------------  */
+
 
