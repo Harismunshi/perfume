@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Gallary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./PNG/Perfume_Gallary.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-container bg-dark-black">
+        <div class="circle"></div>
+        <div class="container">
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="./PNG/logo_11.png" class="nav-logo">
+                    </div>
+                    <ul class="navlist" id="navlist">
+                        <li>
+                            <a href="#" class="navlinks active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navlinks">Perfume</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navlinks">Deodorant</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navlinks">Body Spray</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navlinks ">Attar</a>
+                        </li>
+                        <!-- <li><a href="cart.html" class="navlinks">Cart</a></li>  Link to Cart Page 
+                    
+                    <div class="cart-icon" id="cart-icon">
+                        🛒 <span id="cart-count">0</span>
+                    </div> -->
+                    <li>
+                            <a href="cart.html"><i class="fa fa-shopping-cart fa-2x navlinks"></i></a>
+                            <span id="cart-count" class="cart-count">0</span>
+                        </li> 
+                    </ul>        
+                    <div class="hamburger" id="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </nav>
+            </header>
+            <div class="hero-section">
+                <div class="left-container">
+                    <h1>THE FRAGRENCE OF LIFE</h1>
+                </div>
+                <div class="middle-container">
+                    <img src="./images/perfume.png" alt="">
+                </div>
+                <div class="right-container">
+                    <p class="para" data-type="border-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam possimus nobis cumque, ut hic natus vitae illum temporibus excepturi dolorem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------- Second Part -------------->
+
+    <div class="scroll-container bg-dark-black">
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+        <div class="scroll">
+            <h2 data-type="scroll-txt">50% OFF</h2>
+            <h2 data-type="scroll-txt">Order Now</h2>
+            <div class="break"></div>
+        </div>
+    </div>
+
+    <!-------------- Third Part -------------->
+
+    <main>
+        <section class="section bg-light-black">
+            <div class="container row">
+                <div class="product-container">
+                    <img src="./images/perfume1.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h2>Our Little Story</h2>
+                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea possimus
+                        praesentium pariatur explicabo repellendus atque doloribus odio ipsam, quia quisquam aperiam
+                        dolores error quod ratione minus assumenda natus ullam ut incidunt dolore eos. Vitae, dicta!
+                        Officiis atque laboriosam ipsa esse temporibus nemo tenetur libero, quasi at numquam quas sit
+                        voluptatem minus adipisci maxime. Quia et delectus dignissimos. Repellendus eos quibusdam totam
+                        blanditiis. Odio, aperiam.</p>
+                    <a href="#" class="primary-btn">Read More</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-------------- Products -------------->
+
+        <section class="section bg-dark-black">
+            <div class="container column">
+                <h2>Best Selling Products</h2>
+                <div class="grid-card-container">
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume2.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Acqua di Gio</h4>
+                            <p class="price">$34.00</p>
+                            <!-- <a href="#" class="primary-btn">Add to Cart</a> -->
+                            <button class="primary-btn" onclick="addToCart('Acqua di Gio', 34.00, 'images/perfume2.png')">Add to Cart</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume3.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Giorgio Armani</h4>
+                            <p class="price">$40.00</p>
+                            <!-- <a href="#" class="primary-btn">Add to Cart</a> -->
+                            <button class="primary-btn" onclick="addToCart('Giorgio Armani', 40.00, 'images/perfume3.png')">Add to Cart</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume4.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Dior Poison Eau de Toilette</h4>
+                            <p class="price">$70.00</p>
+                            <!-- <a href="#" class="primary-btn">Add to Cart</a> -->
+                            <button class="primary-btn" onclick="addToCart('Dior Poison Eau de Toilette', 70.00, 'images/perfume4.png')">Add to Cart</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume5.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Mon Paris Floral Edp</h4>
+                            <p class="price">$95.00</p>
+                            <!-- <a href="#" class="primary-btn">Add to Cart</a> -->
+                            <button class="primary-btn" onclick="addToCart('Mon Paris Floral Edp', 95.00, 'images/perfume5.png')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume6.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Givenchy Gentleman EDT</h4>
+                            <p class="price">$53.00</p>
+                            <!-- <a href="#" class="primary-btn">Add to Cart</a> -->
+                            <button class="primary-btn" onclick="addToCart('Givenchy Gentleman EDT', 53.00, 'images/perfume6.png')">Add to Cart</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-product">
+                            <img src="images/perfume7.png">
+                        </div>
+                        <div class="card-info">
+                            <h4>Wanted Eau De Toilette</h4>
+                            <p class="price">$54.00</p>
+                            <!-- <a href="#" class="primary-btn">Add to Cart</a> -->
+                            <button class="primary-btn" onclick="addToCart('Wanted Eau De Toilette', 54.00, 'images/perfume7.png')">Add to Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------- Services -------------->
+
+        <section class="section bg-light-black">
+            <div class="container column">
+                <h2>Our Services</h2>
+                <div class="grid-card-container">
+                    <div class="services-card">
+                        <h3>Free Shiping</h3>
+                        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga mollitia
+                            quas! Atque cupiditate molestiae tempora asperiores architecto fugiat aut? Vitae, a!</p>
+                    </div>
+                    <div class="services-card">
+                        <h3>Free Customer Support</h3>
+                        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga mollitia
+                            quas! Atque cupiditate molestiae tempora asperiores architecto fugiat aut? Vitae, a!</p>
+                    </div>
+                    <div class="services-card">
+                        <h3>Payment Security</h3>
+                        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga mollitia
+                            quas! Atque cupiditate molestiae tempora asperiores architecto fugiat aut? Vitae, a!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------- Sale Section -------------->
+
+        <section class="section bg-dark-black celebrate">
+            <div class="glow1"></div>
+            <div class="glow2"></div>
+            <div class="glow3"></div>
+            <div class="container row">
+                <div class="sale-product">
+                    <img src="images/sale perfume.png">
+                </div>
+                <div class="sale-content">
+                    <p class="sale-heading">Celebrate Day Sale!</p>
+                    <h3 class="sale-txt">Save 25% Of On All <br>Items Collection</h3>
+                    <a href="#" class="primary-btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------- Services -------------->
+
+        <section class="section bg-light-black">
+            <div class="container column">
+                <h2>Our Perfume Gallery</h2>
+                <div class="gallery-container">
+                    <div class="image-gallery">
+                        <img src="images/gallery1.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery2.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery3.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery4.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery5.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery6.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery7.jpg">
+                    </div>
+                    <div class="image-gallery">
+                        <img src="images/gallery8.jpg">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-------------- Footer -------------->
+
+
+    <footer class="section bg-dark-black">
+        <div class="container">
+            <p class="footer-txt">Copyright &copy; 2024 All rights reserved by Pathan_Zuhair</p>
+            <!---AKA Perfume_Gallary -->
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

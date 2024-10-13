@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./PNG/logo_11.png" class="nav-logo" alt="Logo">
+        </div>
+        <ul class="navlist" id="navlist">
+            <li><a href="index.html" class="navlinks">Home</a></li>
+            <li><a href="#" class="navlinks">Perfume</a></li>
+            <li><a href="#" class="navlinks">Deodorant</a></li>
+            <li><a href="#" class="navlinks">Body Spray</a></li>
+            <li><a href="#" class="navlinks">Attar</a></li>
+            <li><a href="cart.html" class="navlinks active">Cart</a></li> <!-- Active link -->
+        </ul>
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="cart-page">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: $0.00</p>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>
