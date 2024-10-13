@@ -61,10 +61,30 @@ function addToCart(name, price, image) {
 }
 
 
+function showPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block'; 
+
+    
+    setTimeout(() => {
+        popup.style.display = 'none'; 
+    }, 1000); 
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.primary-btn').forEach(button => {
+        button.addEventListener('click', showPopup);
+    });
+});
+
+
+
 function updateCartCount() {
     cartCount = cart.reduce((count, item) => count + item.quantity, 0);
     document.getElementById('cart-count').textContent = cartCount;
 }
+
 
 function displayCartItems() {
     const cartItemsDiv = document.getElementById('cart-items');
@@ -77,22 +97,24 @@ function displayCartItems() {
         itemDiv.innerHTML = `
             <div class="cart-item-content">
                 <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-                <div>
-                    <span>${item.name}</span>
-                    <span>$${item.price.toFixed(2)}</span>
+                <div class="cart-item-info">
+                    <span class="item-name">${item.name}</span>
+                    <span class="item-price">$${item.price.toFixed(2)}</span>
+                </div>
+                <div class="cart-item-buttons">
                     <button onclick="changeQuantity('${item.name}', -1)">-</button>
                     <span>${item.quantity}</span>
                     <button onclick="changeQuantity('${item.name}', 1)">+</button>
                 </div>
             </div>
         `;
-        cartItemsDiv.appendChild(itemDiv); 
+        cartItemsDiv.appendChild(itemDiv);
         total += item.price * item.quantity; 
     });
 
+    
     document.getElementById('total-price').textContent = `Total: $${total.toFixed(2)}`;
 }
-
 
 function changeQuantity(name, amount) {
     const productIndex = cart.findIndex(item => item.name === name);
@@ -125,4 +147,6 @@ function checkout() {
 if (document.title === "Your Cart") {
     displayCartItems();
 }
+
+
 
